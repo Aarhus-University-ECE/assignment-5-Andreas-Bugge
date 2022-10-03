@@ -22,7 +22,7 @@ int main(void) {
 	printf("isValid: %d", circleIsValid(&c[1]));
 
 	/*answer to exercise 7.b*/
-	int n; /*number of numbers to read*/
+	int n = 5; /*number of numbers to read*/
 	/*readin n and check that is is OK*/
 
 	int *numbers = malloc(sizeof(int) * n); /*the numbers read*/
@@ -34,5 +34,27 @@ int main(void) {
 	else {
 		printf("not a Jolly Jumper");}
 	return 0;
+}	
 
+int main(void)
+{ 
+int size;
+int seq [size];
+printf ("Input size");
+scanf ("%d", & size);
+printf (" Input sequence :\n");
+for (int c = 0; c < size ; c ++)
+ {
+ scanf ("%d", & seq [c]) ;
+ }
+
+if(isJollyJumber( seq , size )) 
+{
+printf ("Is Jolly ");
+ }
+else 
+{
+printf ("Is Not jolly ");
+}
+return 0;
 }
